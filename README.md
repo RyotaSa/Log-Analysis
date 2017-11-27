@@ -1,6 +1,6 @@
 # Log-Analysis
 
-**Descroption**
+**Description**
 
 The project will show to build and refine complex queries and use them to draw business conclusions from data.
 
