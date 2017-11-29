@@ -19,7 +19,8 @@ def topArticles():
     rows = cur.fetchall()
     print('The Most Popular Articles:')
     for i in rows:
-        print(i)
+        print(i[0] + ' -- ' + str(i[1]) + 'views')
+    print ('\n')
     # Make the changes to the database persistent
     conn.commit()
     # Close communication with the database
@@ -45,7 +46,8 @@ def topAuthors():
     rows = cur.fetchall()
     print('The Most Popular Authors:')
     for i in rows:
-        print(i)
+        print(i[0] + ' -- ' + str(i[1]) + 'views')
+    print ('\n')
     # Make the changes to the database persistent
     conn.commit()
     # Close communication with the database
@@ -93,7 +95,8 @@ def error():
     rows = cur.fetchall()
     print('Days in which more than 1% of requests lead to errors:')
     for i in rows:
-        print(i)
+        print(i[0].strftime('%B %d, %Y') + ' -- ' + str(i[1]) + '% error')
+    print ('\n')
     # Make the changes to the database persistent
     conn.commit()
     # Close communication with the database
