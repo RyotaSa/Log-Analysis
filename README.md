@@ -30,4 +30,3 @@ And
 Check table's schema:
 ` \d <table name> `
 
-## Application Code ##
