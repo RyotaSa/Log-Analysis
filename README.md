@@ -30,3 +30,7 @@ And
 Check table's schema:
 ` \d <table name> `
 
+**Python Reporting Tool**
+run `newsdata.py` in the VM with command:
+##### `python newsdata.py`
+After this command run, python file executes three functions for questions and print answers on the terminal.
